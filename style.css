@@ -1,0 +1,770 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* LAYOUT */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* NAVIGATION */
+#burger {
+  display: none;
+  color: white;
+}
+
+#top-wrap {
+  display: flex;
+  margin: 0 auto;
+  width: 90rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#top-wrap img {
+  height: 5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 4.5em;
+  color: white;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #BEBEBE;
+  cursor: pointer;
+}
+
+/* HEADER */
+header {
+  background-color: black;
+}
+
+#header-content {
+  display: flex;
+  color: white;
+  margin: 0 auto;
+  width: 90rem;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+#header-content h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+#header-content p {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+#header-content div {
+  padding-left: 7rem;
+}
+
+/* SYNOPSIS */
+#title {
+  width: 90rem;
+  margin: 0 auto;
+  padding: 4rem 0 2rem 0;
+}
+
+#synopsis {
+  display: flex;
+  justify-content: space-between;
+  width: 90rem;
+  margin: 0 auto;
+  padding: 0 0 8rem 0;
+}
+
+#synopsis div {
+  width: 30%;
+}
+
+#synopsis a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  position: absolute;
+  margin: 1.5rem 0;
+}
+
+#trailer:hover {
+  color: white;
+  background-color: black;
+}
+
+/* REVIEWS */
+#review {
+  width: 90rem;
+  margin: 0 auto;
+  color: white;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#stars {
+  margin-bottom: 2rem;
+}
+
+#review-text {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+#review-name {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#review-middle {
+  width: 70%;
+  margin-top: 2rem;
+}
+
+#bg-black {
+  background-color: black;
+  margin-bottom: 6rem;
+  padding-bottom: 3rem;
+}
+
+#dots {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#dots i {
+  margin-left: 1rem;
+}
+
+#arrow-wrap .arrow-responsive {
+  color: white;
+  display: none;
+}
+
+/* TRAILERS */
+#trailers {
+  width: 90rem;
+  margin: 0 auto;
+}
+
+#trailers h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#video {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+#video iframe {
+  border: none;
+  width: 700px;
+  height: 393.75px;
+}
+
+/* CAST/TEAM */
+.cast-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.cast-row p {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.cast-row div {
+  width: 32%;
+}
+
+.cast-row img {
+  width: 100%;
+}
+
+#cast-title {
+  width: 90rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  color: white;
+}
+
+#black-bg {
+  background: linear-gradient(to top, #fff 73%, #000 27%);
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 3rem;
+}
+
+#small-footer {
+  display: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 90rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.top img {
+  height: 8rem;
+}
+
+#logo-small {
+  display: none;
+}
+
+.top ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.top li {
+  margin: 0 1.5rem;
+}
+
+.top a {
+  text-decoration: none;
+  color: white;
+}
+
+.top a:hover {
+  color: #BEBEBE;
+}
+
+.top i {
+  margin-left: 1.5rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 95rem) {
+  #top-wrap {
+    width: 80rem;
+  }
+
+  #header-content {
+    width: 80rem;
+  }
+
+  #header-content h1 {
+    width: 100%;
+  }
+
+  #synopsis {
+    display: block;
+    width: 80rem;
+    margin: 0 auto;
+  }
+
+  #synopsis div {
+    width: 100%;
+  }
+
+  #title {
+    width: 80rem;
+    margin: 0 auto;
+  }
+
+  #synopsis p {
+    margin-bottom: 2rem;
+  }
+
+  #review {
+    width: 80rem;
+  }
+
+  #trailers {
+    width: 80rem;
+  }
+
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  #review {
+    width: 80rem;
+  }
+
+  .cast-row {
+    width: 80rem;
+  }
+
+  #cast-title {
+    width: 80rem;
+  }
+
+  .top {
+    width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 85rem) {
+  #top-wrap {
+    width: 70rem;
+  }
+
+  #header-content {
+    width: 70rem;
+  }
+
+  #header-content h1 {
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  #header-content img {
+    width: 50%;
+  }
+
+  #title {
+    width: 70rem;
+  }
+
+  #synopsis {
+    width: 70rem;
+  }
+
+  #review {
+    width: 70rem;
+  }
+
+  #trailers {
+    width: 70rem;
+  }
+
+  #video iframe {
+    width: 500px;
+    height: 281.25px;
+  }
+
+  .cast-row {
+    width: 70rem;
+  }
+
+  #cast-title {
+    width: 70rem;
+  }
+
+  .cast-row p {
+    font-size: 1.3rem;
+  }
+
+  .top {
+    width: 70rem;
+  }
+}
+
+@media only screen and (max-width: 75rem) {
+  #header-content img {
+    display: none;
+  }
+
+  #top-wrap {
+    width: 60rem;
+  }
+
+  #top-wrap img {
+    height: 4rem;
+  }
+
+  #header-content div {
+    width: 60rem;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 4rem;
+    padding: 0;
+  }
+
+  #title {
+    width: 60rem;
+  }
+
+  #synopsis {
+    width: 60rem;
+  }
+
+  #review {
+    width: 60rem;
+  }
+
+  #trailers {
+    width: 60rem;
+  }
+
+  #video iframe {
+    width: 450px;
+    height: 253.125px;
+  }
+
+  .cast-row {
+    width: 60rem;
+  }
+
+  #cast-title {
+    width: 60rem;
+  }
+
+  .cast-row p {
+    font-size: 1.2rem;
+  }
+
+  .top {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 65rem) {
+  nav ul {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  #top-wrap {
+    width: 50rem;
+  }
+
+  #header-content {
+    width: 50rem;
+  }
+
+  #title {
+    width: 50rem;
+  }
+
+  #synopsis {
+    width: 50rem;
+  }
+
+  #review {
+    width: 50rem;
+  }
+
+  .cast-row {
+    width: 50rem;
+  }
+
+  #cast-title {
+    width: 50rem;
+  }
+
+  .cast-row div {
+    width: 47%;
+  }
+
+  #black-bg {
+    background: linear-gradient(to top, #fff 80%, #000 20%);
+  }
+
+  .top {
+    width: 50rem;
+  }
+
+  #trailers {
+    width: 50rem;
+  }
+
+  #video iframe {
+    width: 600px;
+    height: 337.5px;
+  }
+
+  #video {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .space {
+    margin-bottom: 2rem;
+  }
+
+  .top-nav.responsive {
+    position: relative;
+  }
+
+  .top-nav.responsive ul {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 0.1rem;
+    background-color: white;
+    margin-left: 0;
+    padding: 0 3rem;
+  }
+
+  .top-nav.responsive ul li {
+    margin: 1.5em 0;
+  }
+
+  nav a {
+    color: black;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 55rem) {
+  #top-wrap {
+    width: 40rem;
+  }
+
+  #header-content {
+    width: 40rem;
+  }
+
+  #header-content h1 {
+    width: 60%;
+  }
+
+  #synopsis {
+    width: 40rem;
+  }
+
+  #title {
+    width: 40rem;
+  }
+
+  #arrow-wrap .arrow-responsive {
+    display: block;
+  }
+
+  #arrow-wrap {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin: 0 auto;
+  }
+
+  #review .arrow {
+    display: none;
+  }
+
+  #review {
+    width: 40rem;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+
+  #review-middle {
+    width: 100%;
+  }
+
+  #right-arrow {
+    margin-left: 1rem;
+  }
+
+  #trailers {
+    width: 40rem;
+  }
+
+  #video iframe {
+    width: 450px;
+    height: 253.125px;
+  }
+
+  .cast-row {
+    width: 40rem;
+  }
+
+  #cast-title {
+    width: 40rem;
+  }
+
+  .top {
+    width: 40rem;
+    padding-bottom: 2rem;
+  }
+
+  .top ul {
+    padding-top: 2.4rem;
+    display: block;
+  }
+
+  .top li {
+    margin-bottom: 0.5rem;
+  }
+
+  #logo-big {
+    display: none;
+  }
+
+  #logo-small {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  #top-wrap img {
+    height: 3rem;
+  }
+
+  #top-wrap {
+    width: 30rem;
+  }
+
+  #header-content {
+    width: 30rem;
+  }
+
+  #header-content h1 {
+    width: 80%;
+  }
+
+  #synopsis {
+    width: 30rem;
+  }
+
+  #title {
+    width: 30rem;
+  }
+
+  #review {
+    width: 30rem;
+  }
+
+  #arrow-wrap {
+    width: 30rem;
+  }
+
+  #trailers {
+    width: 30rem;
+  }
+
+  .cast-row {
+    width: 30rem;
+  }
+
+  #cast-title {
+    width: 30rem;
+  }
+
+  .cast-row div {
+    width: 100%;
+  }
+
+  #black-bg {
+    background: linear-gradient(to top, #fff 89%, #000 11%);
+  }
+
+  .top {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 35rem) {
+  #top-wrap {
+    width: 25rem;
+  }
+
+  #header-content {
+    width: 25rem;
+  }
+
+  #header-content h1 {
+    width: 100%;
+  }
+
+  #synopsis {
+    width: 25rem;
+  }
+
+  #title {
+    width: 25rem;
+  }
+
+  #review {
+    width: 25rem;
+  }
+
+  #arrow-wrap {
+    width: 25rem;
+  }
+
+  #review-text {
+    font-size: 1.5rem;
+  }
+
+  #trailers {
+    width: 25rem;
+  }
+
+  #video iframe {
+    width: 400px;
+    height: 225px;
+  }
+
+  .cast-row {
+    width: 25rem;
+  }
+
+  #cast-title {
+    width: 25rem;
+  }
+
+  .top {
+    width: 25rem;
+  }
+
+  .top i {
+    margin-left: 0.4rem;
+  }
+}
